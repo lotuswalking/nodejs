@@ -9,7 +9,7 @@ const options = {
   passphrase: '1'
 };
 
-const socket = tls.connect(8000, options, () => {
+const socket = tls.connect(4443, options, () => {
   console.log('client connected',
               socket.authorized ? 'authorized' : 'unauthorized');
   process.stdin.pipe(socket);
